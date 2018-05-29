@@ -29,6 +29,8 @@
   {% endif %}
   {% if page.img %}
     <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}" property="og:image">
+  {% elseif logo.img }
+    <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ logo.png }}" property="og:image">
   {% else %}
     <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}" property="og:image">
   {% endif %}
