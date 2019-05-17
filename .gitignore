@@ -1,34 +1,19 @@
-_site
-.sass-cache
-.jekyll-metadata
+.DS_Store
+.idea/
+*.log
+*.iml
 yarn.lock
-Gemfile.lock
 package-lock.json
 node_modules/
 
-### macOS ###
-*.DS_Store
-.AppleDouble
-.LSOverride
+# Ignore optional external libraries
+source/lib/*
 
-# Icon must end with two \r
-Icon
+# Track internal libraries & Ignore unused verdors files
+source/lib/font-awesome/less/
+source/lib/font-awesome/scss/
+!source/lib/font-awesome/*
 
-# Thumbnails
-._*
+!source/lib/jquery/
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+!source/lib/velocity/
